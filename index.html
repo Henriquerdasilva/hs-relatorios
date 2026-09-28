@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b2e4a">
+  <meta name="description" content="Relatórios de atendimento técnico: horas, despesas, deslocamentos e suporte remoto.">
+  <title>HS Relatórios</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="HS Relatórios">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="top">
+    <a id="backBtn" class="icon-btn" href="#/" aria-label="Voltar" hidden>‹</a>
+    <img id="brandLogo" src="logo-white.webp" alt="HS Systems">
+    <h1 id="title">HS Relatórios</h1>
+    <div id="topRight"></div>
+  </header>
+
+  <main id="app"><p class="loading">Carregando…</p></main>
+
+  <nav id="tabs">
+    <a href="#/" data-tab="home"><span>🏠</span>Início</a>
+    <a href="#/atends" data-tab="atends"><span>📁</span>Atendimentos</a>
+    <a href="#/clients" data-tab="clients"><span>👥</span>Clientes</a>
+    <a href="#/reports" data-tab="reports"><span>📊</span>Relatórios</a>
+    <a href="#/settings" data-tab="settings"><span>⚙️</span>Ajustes</a>
+  </nav>
+
+  <div id="sheet" class="overlay hidden"></div>
+  <div id="report" class="hidden"></div>
+  <div id="viewer" class="overlay hidden"></div>
+  <div id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
